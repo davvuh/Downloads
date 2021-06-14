@@ -1,38 +1,39 @@
 
 <#PSScriptInfo
 
-.VERSION 1.1
+    .VERSION 1.2
 
-.GUID 72efaf32-287b-45b9-9c19-624071edf40e
+    .GUID 72d7cdde-091c-4fbc-8f47-d417e9f5b3fb
 
-.AUTHOR Vikas Sukhija
+    .AUTHOR Vikas Sukhija
 
-.COMPANYNAME techwizard.cloud
+    .COMPANYNAME techwizard.cloud
 
-.COPYRIGHT techwizard.cloud
+    .COPYRIGHT techwizard.cloud
 
-.TAGS
+    .TAGS
 
-.LICENSEURI https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
+    .LICENSEURI https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
 
-.PROJECTURI https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
+    .PROJECTURI https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
 
-.ICONURI
+    .ICONURI
 
-.EXTERNALMODULEDEPENDENCIES AzureAD,ImportExcel 
+    .EXTERNALMODULEDEPENDENCIES AzureAD,ImportExcel 
 
-.REQUIREDSCRIPTS
+    .REQUIREDSCRIPTS
 
-.EXTERNALSCRIPTDEPENDENCIES
+    .EXTERNALSCRIPTDEPENDENCIES
 
-.RELEASENOTES
-https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
+    .RELEASENOTES
+    https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
 
-.PRIVATEDATA
+    .PRIVATEDATA
 
     Created with: 	ISE
     Created on:   	5/11/2021	
     Filename:     	LicenseAssignmentDates.ps1 
+    updated on:     6/14/2021 (fixed bug with export excel showing incorrect dates)
 
 #>
 
@@ -40,8 +41,8 @@ https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/
 
 <# 
 
-.DESCRIPTION 
- License Assignment Dates 
+    .DESCRIPTION 
+    License Assignment Dates 
 
 #> 
 Param(
@@ -120,6 +121,7 @@ function Write-Log
 ####################Load variables and log#######################################
 $log = Write-Log -Name "LicenseAssignmentDates-Log" -folder "logs" -Ext "log"
 $report1 = (Get-Location).path + "\report\LicenseAssignmentDates-Report.xlsx"
+$csv = (Get-Location).path + "\report\tempcsv3.csv"
 ##################################################################################
 try{
   Write-Log -Message "Start ................Script" -path $log
@@ -161,7 +163,8 @@ try{
   
   }
   Write-Log -Message "Exporting the data to Report" -path $log
-  $collection | Export-Excel $Report1
+  $collection | Export-Csv $csv
+  import-csv $csv | Export-Excel $Report1
 }
 catch{
   $exception = $_.Exception.Message
