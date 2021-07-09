@@ -12,9 +12,9 @@
 
     .TAGS
 
-    .LICENSEURI
+    .LICENSEURI https://techwizard.cloud/2021/07/09/powershell-ad-group-to-azure-ad-cloud-only-group-sync/
 
-    .PROJECTURI
+    .PROJECTURI https://techwizard.cloud/2021/07/09/powershell-ad-group-to-azure-ad-cloud-only-group-sync/
 
     .ICONURI
 
@@ -24,7 +24,7 @@
 
     .EXTERNALSCRIPTDEPENDENCIES
 
-    .RELEASENOTES
+    .RELEASENOTES https://techwizard.cloud/2021/07/09/powershell-ad-group-to-azure-ad-cloud-only-group-sync/
 
 
     .PRIVATEDATA
