@@ -1,27 +1,46 @@
 ﻿<#PSScriptInfo
+
     .VERSION 1.0
-    .GUID 94da05dd-7958-4727-9dcd-fc03caa9589b
+
+    .GUID 5f60cfc9-8427-4392-8fbe-8ba62dac6a15
+
     .AUTHOR Vikas Sukhija
+
     .COMPANYNAME techwizard.cloud
+
     .COPYRIGHT techwizard.cloud
+
     .TAGS
-    .LICENSEURI 
-    .PROJECTURI 
+
+    .LICENSEURI https://techwizard.cloud/2021/09/24/azuread-application-report/
+
+    .PROJECTURI https://techwizard.cloud/2021/09/24/azuread-application-report/
+
     .ICONURI
-    .EXTERNALMODULEDEPENDENCIES
+
+    .EXTERNALMODULEDEPENDENCIES 
+
     .REQUIREDSCRIPTS
+
     .EXTERNALSCRIPTDEPENDENCIES
+
     .RELEASENOTES
+    https://techwizard.cloud/2021/09/24/azuread-application-report/
+
     .PRIVATEDATA
+
+    Created with: 	ISE
     Created on:   	9/21/2021 10:40 AM
     Created by:   	Vikas Sukhija
     Organization: 	
     Filename:     	AzureADApplicationExport.ps1
 #>
+
 <# 
     .DESCRIPTION 
     Exctract Azure AD application information
 #> 
+Param($run="run")
 ################################Load modules#################
 import-module vsadmin
 import-module AzureAD
