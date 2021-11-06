@@ -141,4 +141,11 @@
  <li><a href="https://techwizard.cloud/2021/05/04/active-directory-health-check-v2/" target="_blank" rel="noopener">Active Directory Health Check V2</a></li>
 <li><a href="https://techwizard.cloud/2021/05/23/office-365-license-assignment-dates/" target="_blank" rel="noopener">Office 365 License Assignment Dates</a></li>
 <li><a href="https://techwizard.cloud/2021/05/31/available-team-numbers-report/" target="_blank" rel="noopener">Available Team Numbers Report</a></li>
+ <li><a href="https://techwizard.cloud/2021/02/17/password-hash-sync-password-expiry-set-to-never-expire/" target="_blank" rel="noopener">Password HASH Sync &ndash; Password expiry Set to Never Expire</a></li>
+<li><a href="https://techwizard.cloud/2021/07/09/powershell-ad-group-to-azure-ad-cloud-only-group-sync/" target="_blank" rel="noopener">PowerShell &ndash; AD Group to Azure AD Cloud Only Group Sync</a></li>
+<li><a href="https://techwizard.cloud/2021/08/09/restrict-user-accounts-from-ou-to-computer-list/" target="_blank" rel="noopener">Restrict User Accounts From OU To Computer List</a></li>
+<li><a href="https://techwizard.cloud/2021/08/30/powershell-update-users-from-textfile-to-azuread-group/" target="_blank" rel="noopener">PowerShell: Update AzureAD Group membership from text file</a></li>
+<li><a href="https://techwizard.cloud/2021/09/24/azuread-application-report/" target="_blank" rel="noopener">AzureAD Application Report</a></li>
+<li><a href="https://techwizard.cloud/2021/10/24/azuread-application-cert-and-secret-expiry-alert/" target="_blank" rel="noopener">AzureAD Application Cert and Secret Expiry Alert</a></li>
+<li><a href="https://techwizard.cloud/2021/11/06/powerapps-dlp-policy-exclude-teams-environments-script/" target="_blank" rel="noopener">Powerapps DLP Policy &ndash; Exclude Teams Environments Script</a></li>
 </ul>
